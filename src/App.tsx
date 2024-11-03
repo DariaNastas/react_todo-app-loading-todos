@@ -177,7 +177,7 @@ export const App: React.FC = () => {
         {todos.length > 0 && (
           <TodoFooter
             setFilter={setFilter}
-            remainingCount={todos.filter(todo => !todo.completed).length}
+            remainingCount={todos.filter(todo => !todo.completed).length} // Змінено тут
             currentFilter={filter}
           />
         )}
